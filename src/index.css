@@ -1,13 +1,110 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.comn/css?family=Raleway:300,400');
+
+* {
+  box-sizing: border-box;
+  /* font-family: Raleway; */
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+#overlord, #nav {
+  flex-direction: column;
+}
+
+#overlord {
+  height: 2000px;
+}
+
+
+
+
+
+
+
+
+
+/* flex & formatting */
+
+
+
+
+
+
+
+
+
+/* Nav */
+
+.TN {
+  height: 10vh;
+  display: flex;
+}
+
+.TN-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  padding: 0 5% 0 0;
+}
+
+.TN-right {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.TN-right-header {
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.TN-right-child {
+  height: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.BN {
+  outline: 1px solid black;
+  height: 5vh;
+  display: flex;
+}
+
+.BN-left {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.BN-right {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#BN-book-2 {
+  display: none;
 }
