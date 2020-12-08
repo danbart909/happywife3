@@ -31,32 +31,29 @@ export default class Home extends Component {
                 alt='company logo'
               />
             </div>
-          </div>
-        </div>
-        <div id='home-mid'>
-          <div id='home-second'>
-            <div id='home-img-container-2'>
+            {/* <div id='home-img-container-2'>
               <img
                 src='https://i.imgur.com/usX1Piu.png'
                 id='home-first-logo-2'
                 alt='company logo'
               />
-            </div>
+            </div> */}
+          </div>
+          <div id='home-second'>
             <span>A Customer Service Driven Junk Removal Company</span>
           </div>
-          <div id='home-mid-bot'>
-            <div id='home-third'>
-              <Link to='/pricing' id='home-third-button-1'>
-                <span>SEE PRICING</span>
-              </Link>
-              <Link to='/booknow' id='home-third-button-2'>
-                <span>GET A QUOTE</span>
-              </Link>
-            </div>
-            <div id='home-fourth'>
-              <div id='home-fourth-img'>
-                
-              </div>
+        </div>
+        <div id='home-mid'>
+          <div id='home-third'>
+            <Link to='/pricing' id='home-third-button-1'>
+              SEE PRICING
+            </Link>
+            <Link to='/booknow' id='home-third-button-2'>
+              GET A QUOTE
+            </Link>
+          </div>
+          <div id='home-fourth'>
+            <div id='home-fourth-img'>
             </div>
           </div>
         </div>

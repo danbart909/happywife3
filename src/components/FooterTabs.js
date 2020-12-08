@@ -17,7 +17,7 @@ export default class FooterTabs extends Component {
 
         <TabContent for="info">
           <div id='footer-info-title' className='footer-title'>Our Info</div>
-          <div className='footer-tab-content' id='footer-info-body'>
+          <div id='footer-info-body' className='footer-tab-content'>
             <div id='footer-info-1' className='footer-info-box'>
               <span>Pretty Good Inc, DBA</span>
               <span>Happy Wife Junk Services</span>
@@ -32,9 +32,10 @@ export default class FooterTabs extends Component {
             </div>
           </div>
         </TabContent>
+
         <TabContent for="services">
           <div id='footer-services-title' className='footer-title'>Our Services</div>
-          <div className='footer-tab-content' id='footer-services-body'>
+          <div id='footer-services-body' className='footer-tab-content'>
             <Link to='/services/ApplianceRemoval'><span>Appliance Removal</span></Link>
             <Link to='/services/BasementCleanOut'><span>Basement Clean Out</span></Link>
             <Link to='/services/FurnitureJunkRemoval'><span>Furniture Junk Removal</span></Link>
@@ -53,9 +54,10 @@ export default class FooterTabs extends Component {
             <Link to='/services/TVRemoval'><span>TV Removal</span></Link>
           </div>
         </TabContent>
+
         <TabContent for="zip">
           <div id='footer-zip-title' className='footer-title'>Our Zip Codes</div>
-          <div className='footer-tab-content' id='footer-zip-body'>
+          <div id='footer-zip-body' className='footer-tab-content'>
             <span>30060</span>
             <span>30062</span>
             <span>30064</span>
@@ -69,9 +71,10 @@ export default class FooterTabs extends Component {
             <span>30127</span>
           </div>
         </TabContent>
+
         <TabContent for="areas">
           <div id='footer-areas-title' className='footer-title'>Our Areas</div>
-          <div className='footer-tab-content' id='footer-areas-body'>
+          <div id='footer-areas-body' className='footer-tab-content'>
             <span>Cobb County</span>
             <span>East Cobb</span>
             <span>North Cobb</span>
@@ -79,9 +82,10 @@ export default class FooterTabs extends Component {
             <span>West Cobb</span>
           </div>
         </TabContent>
+
         <TabContent for="cities">
           <div id='footer-cities-title' className='footer-title'>Our Cities</div>
-          <div className='footer-tab-content' id='footer-cities-body'>
+          <div id='footer-cities-body' className='footer-tab-content'>
             <Link to='/areas/Acworth'><span>Acworth</span></Link>
             <Link to='/areas/Austell'><span>Austell</span></Link>
             <Link to='/areas/Kennesaw'><span>Kennesaw</span></Link>

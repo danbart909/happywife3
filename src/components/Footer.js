@@ -11,9 +11,9 @@ export default class Footer extends Component {
           <div id='f-info-title' className='f-titles'>
             <span>Our Info</span>
           </div>
-          <div id='f-info-hr' className='f-hr'>
+          {/* <div id='f-info-hr' className='f-hr'>
             <hr />
-          </div>
+          </div> */}
           <div id='f-info-content' className='f-content'>
             <div id='f-info-1' className='f-info-box'>
               <span>Pretty Good Inc, DBA</span>
@@ -36,9 +36,9 @@ export default class Footer extends Component {
           <div id='f-services-title' className='f-titles'>
             <span>Our Services</span>
           </div>
-          <div id='f-services-hr' className='f-hr'>
+          {/* <div id='f-services-hr' className='f-hr'>
             <hr />
-          </div>
+          </div> */}
           <div id='f-services-content' className='f-content'>
             <Link to='/services/ApplianceRemoval'><span>Appliance Removal</span></Link>
             <Link to='/services/BasementCleanOut'><span>Basement Clean Out</span></Link>
@@ -65,9 +65,9 @@ export default class Footer extends Component {
           <div id='f-zip-title' className='f-titles'>
             <span>Our Zip Codes</span>
           </div>
-          <div id='f-zip-hr' className='f-hr'>
+          {/* <div id='f-zip-hr' className='f-hr'>
             <hr />
-          </div>
+          </div> */}
           <div id='f-zip-content' className='f-content'>
             <span>30060</span>
             <span>30062</span>
@@ -89,9 +89,9 @@ export default class Footer extends Component {
           <div id='f-areas-title' className='f-titles'>
             <span>Our Areas</span>
           </div>
-          <div id='f-areas-hr' className='f-hr'>
+          {/* <div id='f-areas-hr' className='f-hr'>
             <hr />
-          </div>
+          </div> */}
           <div id='f-areas-content' className='f-content'>
             <span>Cobb County</span>
             <span>East Cobb</span>
@@ -107,9 +107,9 @@ export default class Footer extends Component {
           <div id='f-cities-title' className='f-titles'>
             <span>Our Cities</span>
           </div>
-          <div id='f-cities-hr' className='f-hr'>
+          {/* <div id='f-cities-hr' className='f-hr'>
             <hr />
-          </div>
+          </div> */}
           <div id='f-cities-content' className='f-content'>
             <Link to='/areas/Acworth'><span>Acworth</span></Link>
             <Link to='/areas/Austell'><span>Austell</span></Link>

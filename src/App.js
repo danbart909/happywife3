@@ -63,14 +63,14 @@ export default class App extends Component {
     });
 
     return (
-      <section id='overlord' className='flex'>
-        <div id='nav' className='flex'>
+      <section id='overlord'>
+        <div id='nav'>
           <TopNav />
           {/* <Sticky> */}
             <BottomNav />
           {/* </Sticky> */}
         </div>
-        <div id='body' className='flex'>
+        <div id='body'>
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/areas/Acworth' component={Acworth} />
@@ -121,10 +121,10 @@ export default class App extends Component {
             <Route path='/booknow' component={BookNow} />
           </Switch>
         </div>
-        <div id='footertabs' className='flex'>
+        <div id='footertabs'>
           <FooterTabs />
         </div>
-        <div id='footer' className='flex'>
+        <div id='footer'>
           <Footer />
         </div>
         <ScrollToTop />

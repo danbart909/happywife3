@@ -21,28 +21,20 @@ img {
 }
 
 #overlord {
-  height: 2000px;
+  /* height: 2000px; */
 }
 
 
 
 
 
+/*****************************/
+/********** Top Nav **********/
+/*****************************/
 
 
 
 
-/* flex & formatting */
-
-
-
-
-
-
-
-
-
-/* Nav */
 
 .TN {
   height: 10vh;
@@ -63,23 +55,24 @@ img {
   width: 80%;
 }
 
-.TN-right-header {
+.TN-right-child {
   height: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.TN-right-child {
-  height: 25%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.TN-right-child span {
+  margin: 0 5px;
 }
 
 
 
 
+
+/********************************/
+/********** Bottom Nav **********/
+/********************************/
 
 
 
@@ -107,4 +100,538 @@ img {
 
 #BN-book-2 {
   display: none;
+}
+
+
+
+
+
+/**************************/
+/********** Home **********/
+/**************************/
+
+
+
+
+
+#home-container {
+
+}
+
+#home-top {
+  /* height: 70vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-first {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)
+  ), url("images/home1.jpg");
+  background-color: black;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  /* background-attachment: fixed; */
+  /* position: relative; */
+  height: 45vh;
+  /* height: 50%; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  outline: 2px solid red;
+}
+
+#home-img-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 8vw;
+  outline: 3px solid gold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#home-first-logo {
+  outline: 1px solid black;
+  height: 100%;
+  width: auto;
+}
+
+/* #home-img-container-2 {
+  outline: 1px solid black;
+  display: none;
+}
+
+#home-first-logo-2 {
+
+} */
+
+#home-second {
+  outline: 1px solid black;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-second span {
+  outline: 1px solid black;
+}
+
+#home-mid {
+  outline: 1px solid black;
+  height: 30vh;
+}
+
+#home-third {
+
+}
+
+#home-third-button-1 {
+
+}
+
+#home-third-button-2 {
+  
+}
+
+#home-fourth {
+  display: none;
+}
+
+#home-fourth-img {
+
+}
+
+#home-bot {
+
+}
+
+
+
+
+
+/******************************/
+/********** About Us **********/
+/******************************/
+
+
+
+
+
+#aboutus-container {
+
+}
+
+.aboutus-box {
+
+}
+
+.aboutus-title {
+  
+}
+
+.aboutus-hr {
+
+}
+
+.aboutus-text {
+  
+}
+
+.aboutus-text-span {
+  
+}
+
+#aboutus {
+
+}
+
+#aboutus-1 {
+  
+}
+
+#aboutus-2 {
+  
+}
+
+#whatwebelieve {
+
+}
+
+#whatwebelieve-1 {
+
+}
+
+#whatwebelieve-2 {
+
+}
+
+#ourservices {
+
+}
+
+#ourservices-1 {
+  
+}
+
+#ourservices-2 {
+  
+}
+
+
+
+
+
+/*****************************/
+/********** Virtues **********/
+/*****************************/
+
+
+
+
+
+#virtues {
+
+}
+
+#virtues-header {
+
+}
+
+#virtues-body {
+
+}
+
+.virtue {
+
+}
+
+.virtues-title {
+
+}
+
+.virtues-hr {
+
+}
+
+.virtues-text {
+  
+}
+
+#virtues-1 {
+
+}
+
+#virtues-title-1 {
+  
+}
+
+#virtues-text-1 {
+  
+}
+
+#virtues-2 {
+
+}
+
+#virtues-title-2 {
+  
+}
+
+#virtues-text-2 {
+  
+}
+
+#virtues-3 {
+
+}
+
+#virtues-title-3 {
+  
+}
+
+#virtues-text-3 {
+  
+}
+
+
+
+
+
+/*********************************/
+/********** Footer Tabs **********/
+/*********************************/
+
+
+
+
+
+#footertabs {
+  background-color: darkgray;
+  height: 50vh;
+}
+
+.footer-tabs {
+  outline: 1px solid black;
+  height: 100%;
+}
+
+#tab-labels {
+  outline: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+
+.tab-link {
+  outline: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+}
+
+.footer-title {
+  outline: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+
+.footer-tab-content {
+  outline: 1px solid black;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#footer-info-title {
+
+}
+
+#footer-info-body {
+
+}
+
+.footer-info-box {
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 2.5;
+}
+
+#footer-services-title {
+
+}
+
+#footer-services-body {
+
+}
+
+#footer-zip-title {
+
+}
+
+#footer-zip-body {
+
+}
+
+#footer-areas-title {
+
+}
+
+#footer-areas-body {
+
+}
+
+#footer-cities-title {
+
+}
+
+#footer-cities-body {
+
+}
+
+
+
+
+
+/****************************/
+/********** Footer **********/
+/****************************/
+
+
+
+
+
+#footer {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 900px) {
+
+  #footer {
+    display: flex;
+    background-color: lightgray;
+  }
+
+  #f-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .f-box {
+    outline: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 20%;
+  }
+  
+  .f-titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .f-hr {
+  
+  } */
+  
+  .f-content {
+    outline: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  
+  .f-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #f-info {
+  
+  }
+  
+  #f-info-title {
+  
+  }
+  
+  #f-info-hr {
+  
+  }
+  
+  #f-info-content {
+    display: flex;
+  }
+  
+  #f-info-1 {
+  
+  }
+  
+  #f-info-2 {
+    
+  }
+  
+  #f-info-3 {
+    
+  }
+  
+  #f-services {
+  
+  }
+  
+  #f-services-title {
+  
+  }
+  
+  #f-services-hr {
+  
+  }
+  
+  #f-services-content {
+  
+  }
+  
+  #f-zip {
+  
+  }
+  
+  #f-zip-title {
+    
+  }
+  
+  #f-zip-hr {
+    
+  }
+  
+  #f-zip-content {
+    
+  }
+  
+  #f-areas {
+    
+  }
+  
+  #f-areas-title {
+    
+  }
+  
+  #f-areas-hr {
+    
+  }
+  
+  #f-areas-content {
+    
+  }
+  
+  #f-cities {
+    
+  }
+  
+  #f-cities-title {
+    
+  }
+  
+  #f-cities-hr {
+    
+  }
+  
+  #f-cities-content {
+    
+  }
+
+  #footertabs {
+    display: none;
+  }
+
 }

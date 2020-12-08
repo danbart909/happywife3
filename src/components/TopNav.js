@@ -11,13 +11,9 @@ export default class TopNav extends Component {
 
         <div className='TN-right'>
 
-          <div className='TN-right-header'>
-            <span>A Customer Service Driven Junk Removal Company</span>
-          </div>
-
           <div className='TN-right-child'>
             <a href='tel:770-873-0803'>
-              <span>770.873.0803</span>
+              770.873.0803
             </a>
           </div>
 
