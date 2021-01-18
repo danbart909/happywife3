@@ -3,7 +3,13 @@
 * {
   box-sizing: border-box;
   /* font-family: Raleway; */
-  color: #333;
+}
+
+:root {
+  --teal: #acccc6;
+  --dark: #524d5c;
+  --salmon: #faada0;
+  --white: #fffbef;
 }
 
 html, body {
@@ -16,12 +22,14 @@ img {
   width: 50px;
 }
 
-#overlord, #nav {
-  flex-direction: column;
-}
-
 #overlord {
   /* height: 2000px; */
+  background: lightgray;
+  color: black;
+}
+
+#overlord a {
+  color: black;
 }
 
 
@@ -39,6 +47,7 @@ img {
 .TN {
   height: 10vh;
   display: flex;
+  background-image: linear-gradient(to right, #acccc6, #524d5c);
 }
 
 .TN-left {
@@ -80,8 +89,12 @@ img {
 
 .BN {
   outline: 1px solid black;
+  background: var(--teal);
   height: 5vh;
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .BN-left {
@@ -114,11 +127,11 @@ img {
 
 
 
-#home-container {
+.home-container {
 
 }
 
-#home-top {
+.home-top {
   /* height: 70vh; */
   display: flex;
   flex-direction: column;
@@ -126,7 +139,7 @@ img {
   align-items: center;
 }
 
-#home-first {
+.home-first {
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.1),
@@ -143,21 +156,18 @@ img {
   width: 100%;
   display: flex;
   align-items: center;
-  outline: 2px solid red;
 }
 
-#home-img-container {
+.home-img-container {
   width: 100%;
   height: 100%;
   padding: 0 0 0 8vw;
-  outline: 3px solid gold;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-#home-first-logo {
-  outline: 1px solid black;
+.home-first-logo {
   height: 100%;
   width: auto;
 }
@@ -171,7 +181,7 @@ img {
 
 } */
 
-#home-second {
+.home-second {
   outline: 1px solid black;
   width: 100%;
   height: 25vh;
@@ -180,36 +190,165 @@ img {
   align-items: center;
 }
 
-#home-second span {
+.home-second-span {
   outline: 1px solid black;
+  width: 60%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.25;
+  font-size: 28px;
 }
 
-#home-mid {
+.home-mid {
   outline: 1px solid black;
-  height: 30vh;
+  height: 50vh;
+  display: flex;
+  font-size: 22px;
 }
 
-#home-third {
-
+.home-third {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* display: grid; */
+  grid-template:
+    'a b c d' auto / auto auto;
+  /* gap: 10%; */
+  padding: 1.5%;
 }
 
-#home-third-button-1 {
-
+.home-third-button-1 {
+  outline: 1px solid black;
+  /* grid-area: 'a'; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90%;
+  width: 18%;
+  background: url('./images/trailer1.jpg') center right no-repeat;
+  background-size: auto 100%;
+  transition: .4s;
 }
 
-#home-third-button-2 {
-  
+.home-third-button-1 span {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 80%;
+  height: 20%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: auto 100%;
 }
 
-#home-fourth {
-  display: none;
+.home-third-button-1:hover {
+  width: 33%;
 }
 
-#home-fourth-img {
-
+.home-third-button-2 {
+  outline: 1px solid black;
+  /* grid-area: 'b'; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90%;
+  width: 18%;
+  background: url('./images/dadintrailer1.jpg') center no-repeat;
+  background-size: auto 100%;
+  transition: .4s;
 }
 
-#home-bot {
+.home-third-button-2 span {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 80%;
+  height: 20%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: auto 100%;
+}
+
+.home-third-button-2:hover {
+  width: 33%;
+}
+
+.home-third-button-3 {
+  outline: 1px solid black;
+  /* grid-area: 'c'; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90%;
+  width: 18%;
+  background: url('./images/trailer3.jpg') center no-repeat;
+  background-size: auto 100%;
+  transition: .4s;
+}
+
+.home-third-button-3 span {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 80%;
+  height: 20%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-third-button-3:hover {
+  width: 33%;
+}
+
+.home-third-button-4 {
+  outline: 1px solid black;
+  /* grid-area: 'd'; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90%;
+  width: 18%;
+  background: url('./images/dadintrailer2.jpg') center no-repeat;
+  background-size: auto 100%;
+  transition: .4s;
+}
+
+.home-third-button-4 span {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 80%;
+  height: 20%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-third-button-4:hover {
+  width: 33%;
+}
+
+.home-fourth {
+  width: 50%;
+}
+
+.home-fourth-img {
+  background: black;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.home-bot {
 
 }
 
@@ -365,104 +504,174 @@ img {
 
 
 
-/*********************************/
-/********** Footer Tabs **********/
-/*********************************/
+/***************************/
+/********** Areas **********/
+/***************************/
 
 
 
 
 
-#footertabs {
-  background-color: darkgray;
-  height: 50vh;
+.a-container {
+  outline: 1px solid black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.footer-tabs {
+.a-title {
+  outline: 1px solid black;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-body {
+  outline: 1px solid black;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-list {
   outline: 1px solid black;
   height: 100%;
-}
-
-#tab-labels {
-  outline: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5vh;
-}
-
-.tab-link {
-  outline: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  height: 100%;
-}
-
-.footer-title {
-  outline: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5vh;
-}
-
-.footer-tab-content {
-  outline: 1px solid black;
-  height: 40vh;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
-#footer-info-title {
+.a-map-container {
+  outline: 1px solid black;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-map {
+  outline: 1px solid black;
+  background: black center no-repeat;
+  background-size: 100%;
+  height: 60%;
+  width: 90%;
+}
+
+
+
+
+
+/******************************/
+/********** Services **********/
+/******************************/
+
+
+
+
+
+.s-container {
+  outline: 1px solid black;
+  height: 120vh;
+  width: 100%;
+}
+
+.s-title {
+  outline: 1px solid black;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-body {
+  outline: 1px solid black;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-box {
+  height: 80%;
+}
+
+.s-intro {
+  outline: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.s-jr-1 {
+  display: flex;
+  height: 20%;
+}
+
+.s-intro {
 
 }
 
-#footer-info-body {
-
+.s-jr-2 {
+  display: flex;
+  height: 30%;
 }
 
-.footer-info-box {
+.s-commercial {
   outline: 1px solid black;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  line-height: 2.5;
 }
 
-#footer-services-title {
-
+.s-residential {
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-#footer-services-body {
-
+.s-jr-3 {
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
 }
 
-#footer-zip-title {
-
+.s-x-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
 }
 
-#footer-zip-body {
-
-}
-
-#footer-areas-title {
-
-}
-
-#footer-areas-body {
-
-}
-
-#footer-cities-title {
-
-}
-
-#footer-cities-body {
-
+.s-x-list {
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
 }
 
 
@@ -476,10 +685,179 @@ img {
 
 
 
-
-#footer {
-  display: none;
+#f-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
+
+.f-box {
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 50%;
+}
+
+.f-titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .f-hr {
+
+} */
+
+.f-content {
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.f-info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#f-info {
+
+}
+
+#f-info-title {
+
+}
+
+#f-info-hr {
+
+}
+
+#f-info-content {
+  display: flex;
+}
+
+#f-info-1 {
+
+}
+
+#f-info-2 {
+  
+}
+
+#f-info-3 {
+  
+}
+
+#f-services {
+
+}
+
+#f-services-title {
+
+}
+
+#f-services-hr {
+
+}
+
+#f-services-content {
+
+}
+
+#f-zip {
+
+}
+
+#f-zip-title {
+  
+}
+
+#f-zip-hr {
+  
+}
+
+#f-zip-content {
+  
+}
+
+#f-areas {
+  
+}
+
+#f-areas-title {
+  
+}
+
+#f-areas-hr {
+  
+}
+
+#f-areas-content {
+  
+}
+
+#f-cities {
+  
+}
+
+#f-cities-title {
+  
+}
+
+#f-cities-hr {
+  
+}
+
+#f-cities-content {
+  
+}
+
+
+
+
+
+
+
+
+
+/* Outline Out */
+
+.outlineOut {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+.outlineOut:before {
+  content: '';
+  position: absolute;
+  border: #e1e1e1 solid 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+
+.outlineOut:hover:before, .outlineOut:focus:before, .outlineOut:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+}
+
+
 
 
 
@@ -493,145 +871,6 @@ img {
 
 @media screen and (min-width: 900px) {
 
-  #footer {
-    display: flex;
-    background-color: lightgray;
-  }
 
-  #f-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .f-box {
-    outline: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    width: 20%;
-  }
-  
-  .f-titles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* .f-hr {
-  
-  } */
-  
-  .f-content {
-    outline: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-  }
-  
-  .f-info-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #f-info {
-  
-  }
-  
-  #f-info-title {
-  
-  }
-  
-  #f-info-hr {
-  
-  }
-  
-  #f-info-content {
-    display: flex;
-  }
-  
-  #f-info-1 {
-  
-  }
-  
-  #f-info-2 {
-    
-  }
-  
-  #f-info-3 {
-    
-  }
-  
-  #f-services {
-  
-  }
-  
-  #f-services-title {
-  
-  }
-  
-  #f-services-hr {
-  
-  }
-  
-  #f-services-content {
-  
-  }
-  
-  #f-zip {
-  
-  }
-  
-  #f-zip-title {
-    
-  }
-  
-  #f-zip-hr {
-    
-  }
-  
-  #f-zip-content {
-    
-  }
-  
-  #f-areas {
-    
-  }
-  
-  #f-areas-title {
-    
-  }
-  
-  #f-areas-hr {
-    
-  }
-  
-  #f-areas-content {
-    
-  }
-  
-  #f-cities {
-    
-  }
-  
-  #f-cities-title {
-    
-  }
-  
-  #f-cities-hr {
-    
-  }
-  
-  #f-cities-content {
-    
-  }
-
-  #footertabs {
-    display: none;
-  }
 
 }

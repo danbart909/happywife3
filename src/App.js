@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
-// import { Sticky } from 'semantic-ui-react'
 import TopNav from './components/TopNav'
 import BottomNav from './components/BottomNav'
 import Home from './components/Home'
@@ -64,12 +63,8 @@ export default class App extends Component {
 
     return (
       <section id='overlord'>
-        <div id='nav'>
-          <TopNav />
-          {/* <Sticky> */}
-            <BottomNav />
-          {/* </Sticky> */}
-        </div>
+        <TopNav />
+        <BottomNav />
         <div id='body'>
           <Switch>
             <Route exact path='/' component={Home} />
@@ -121,12 +116,7 @@ export default class App extends Component {
             <Route path='/booknow' component={BookNow} />
           </Switch>
         </div>
-        <div id='footertabs'>
-          <FooterTabs />
-        </div>
-        <div id='footer'>
-          <Footer />
-        </div>
+        <Footer />
         <ScrollToTop />
       </section>
     )

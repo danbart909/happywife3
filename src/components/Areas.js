@@ -1,77 +1,71 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet';
-import Roswell from '../pages/areas/Roswell';
-import $ from 'jquery'
+import { Helmet } from 'react-helmet'
+import Acworth from '../images/areas/Acworth.jpg'
+import Austell from '../images/areas/Austell.jpg'
+import Kennesaw from '../images/areas/Kennesaw.jpg'
+import Marietta from '../images/areas/Marietta.jpg'
+import Mableton from '../images/areas/Mableton.jpg'
+import PowderSprings from '../images/areas/PowderSprings.jpg'
+import Roswell from '../images/areas/Roswell.jpg'
+import Smyrna from '../images/areas/Smyrna.jpg'
+import Vinings from '../images/areas/Vinings.jpg'
+import Woodstock from '../images/areas/Woodstock.jpg'
+import placeholder from '../images/placeholder.jpg'
 
 export default class Areas extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      img: placeholder
+    }
+  }
+
+  acworth = () => {
+    this.setState({ img: Acworth })
+  }
+
+  austell = () => {
+    this.setState({ img: Austell })
+  }
+
+  kennesaw = () => {
+    this.setState({ img: Kennesaw })
+  }
+
+  marietta = () => {
+    this.setState({ img: Marietta })
+  }
+
+  mableton = () => {
+    this.setState({ img: Mableton })
+  }
+
+  powderSprings = () => {
+    this.setState({ img: PowderSprings })
+  }
+  
+  roswell = () => {
+    this.setState({ img: Roswell })
+  }
+
+  smyrna = () => {
+    this.setState({ img: Smyrna })
+  }
+
+  vinings = () => {
+    this.setState({ img: Vinings })
+  }
+
+  woodstock = () => {
+    this.setState({ img: Woodstock })
+  }
+
+  placeholder = () => {
+    this.setState({ img: placeholder })
+  }
+
   render() {
-
-    $(document).ready(function () {
-
-      $('#areas-title').fadeIn(4000, 'linear')
-
-      $('.acworth').hover(function() {
-        $('#areas-map').css('background-image', 'url(https://i.imgur.com/q1shkdc.jpg)')
-      // }, function() {
-      //   $('#areas-map').css('background-image', '');
-      })
-
-      $('.austell').hover(function() {
-        $('#areas-map').css('background-image', 'url(https://i.imgur.com/xxASiH7.jpg)')
-      // }, function() {
-      //   $('#areas-map').css('background-image', '');
-      })
-
-      $('.kennesaw').hover(function() {
-        $('#areas-map').css('background-image', 'url(https://i.imgur.com/b6RqwPU.jpg)')
-      // }, function() {
-      //   $('#areas-map').css('background-image', '');
-      })
-
-      $('.marietta').hover(function() {
-        $('#areas-map').css('background-image', 'url(https://i.imgur.com/bNArkD5.jpg)')
-      // }, function() {
-      //   $('#areas-map').css('background-image', '');
-      })
-
-      $('.mableton').hover(function() {
-        $('#areas-map').css('background-image', 'url(https://i.imgur.com/H55jJQD.jpg)')
-      // }, function() {
-      //   $('#areas-map').css('background-image', '');
-      })
-
-      $('.powdersprings').hover(function() {
-        $('#areas-map').css('background-image', 'url(https://i.imgur.com/VwCkOY0.jpg)')
-      // }, function() {
-      //   $('#areas-map').css('background-image', '');
-      })
-
-      $('.roswell').hover(function() {
-        $('#areas-map').css('background-image', 'url(https://i.imgur.com/wC2yC1k.jpg)')
-      // }, function() {
-      //   $('#areas-map').css('background-image', '');
-      })
-
-      $('.smyrna').hover(function() {
-        $('#areas-map').css('background-image', 'url(https://i.imgur.com/Qb2P44a.jpg)')
-      // }, function() {
-      //   $('#areas-map').css('background-image', '');
-      })
-
-      $('.vinings').hover(function() {
-        $('#areas-map').css('background-image', 'url(https://i.imgur.com/rahFD2X.jpg)')
-      // }, function() {
-      //   $('#areas-map').css('background-image', '');
-      })
-
-      $('.woodstock').hover(function() {
-        $('#areas-map').css('background-image', 'url(https://i.imgur.com/SECGbkl.jpg)')
-      // }, function() {
-      //   $('#areas-map').css('background-image', '');
-      })
-
-    });
 
     return (
       <>
@@ -79,34 +73,116 @@ export default class Areas extends Component {
           <title>Service Areas</title>
           <meta name="description" content="Happy Wife - Service Areas" />
         </Helmet>
-        <div id='area-container'>
-          <div id='service-areas'>
-            <div className='gD-title'>
+        <div className='a-container container'>
+          {/* <div className='a'> */}
+
+            <div className='a-title title'>
               <span>Our Service Areas</span>
             </div>
 
-            <div id='areas-body'>
+            <div className='a-body body'>
 
-              <div id='areas-list'>
-                <Link className='acworth bonkle' to='/areas/Acworth'><span>Acworth</span></Link>
-                <Link className='austell bonkle' to='/areas/Austell'><span>Austell</span></Link>
-                <Link className='kennesaw bonkle' to='/areas/Kennesaw'><span>Kennesaw</span></Link>
-                <Link className='marietta bonkle' to='/areas/Marietta'><span>Marietta</span></Link>
-                <Link className='mableton bonkle' to='/areas/Mableton'><span>Mableton</span></Link>
-                <Link className='powdersprings bonkle' to='/areas/PowderSprings'><span>Powder Springs</span></Link>
-                <Link className='roswell bonkle' to='/areas/Roswell'><span>Roswell</span></Link>
-                <Link className='smyrna bonkle' to='/areas/Smyrna'><span>Smyrna</span></Link>
-                <Link className='vinings bonkle' to='/areas/Vinings'><span>Vinings</span></Link>
-                <Link className='woodstock bonkle' to='/areas/Woodstock'><span>Woodstock</span></Link>
+              <div className='a-list'>
+
+                <Link
+                  className='acworth map'
+                  to='/areas/Acworth'
+                  onMouseEnter={() => this.acworth()}
+                  // onMouseLeave={() => this.placeholder()}
+                >
+                  <span>Acworth</span>
+                </Link>
+
+                <Link
+                  className='austell map'
+                  to='/areas/Austell'
+                  onMouseEnter={() => this.austell()}
+                  // onMouseLeave={() => this.placeholder()}
+                >
+                  <span>Austell</span>
+                </Link>
+
+                <Link
+                  className='kennesaw map'
+                  to='/areas/Kennesaw'
+                  onMouseEnter={() => this.kennesaw()}
+                  // onMouseLeave={() => this.placeholder()}
+                >
+                  <span>Kennesaw</span>
+                </Link>
+
+                <Link
+                  className='marietta map'
+                  to='/areas/Marietta'
+                  onMouseEnter={() => this.marietta()}
+                  // onMouseLeave={() => this.placeholder()}
+                >
+                <span>Marietta</span>
+                </Link>
+
+                <Link
+                  className='mableton map'
+                  to='/areas/Mableton'
+                  onMouseEnter={() => this.mableton()}
+                  // onMouseLeave={() => this.placeholder()}
+                >
+                  <span>Mableton</span>
+                </Link>
+
+                <Link
+                  className='powdersprings map'
+                  to='/areas/PowderSprings'
+                  onMouseEnter={() => this.powderSprings()}
+                  // onMouseLeave={() => this.placeholder()}
+                >
+                  <span>Powder Springs</span>
+                </Link>
+
+                <Link
+                  className='roswell map'
+                  to='/areas/Roswell'
+                  onMouseEnter={() => this.roswell()}
+                  // onMouseLeave={() => this.placeholder()}
+                >
+                  <span>Roswell</span>
+                </Link>
+
+                <Link
+                  className='smyrna map'
+                  to='/areas/Smyrna'
+                  onMouseEnter={() => this.smyrna()}
+                  // onMouseLeave={() => this.placeholder()}
+                >
+                  <span>Smyrna</span>
+                </Link>
+
+                <Link
+                  className='vinings map'
+                  to='/areas/Vinings'
+                  onMouseEnter={() => this.vinings()}
+                  // onMouseLeave={() => this.placeholder()}
+                >
+                  <span>Vinings</span>
+                </Link>
+
+                <Link
+                  className='woodstock map'
+                  to='/areas/Woodstock'
+                  onMouseEnter={() => this.woodstock()}
+                  // onMouseLeave={() => this.placeholder()}
+                >
+                  <span>Woodstock</span>
+                </Link>
+
               </div>
 
-              <div id='areas-map-container'>
-                <div id='areas-map'></div>
+              <div className='a-map-container'>
+                <div className='a-map' style={{backgroundImage: `url(${this.state.img})`}}></div>
               </div>
 
             </div>
 
-          </div>
+          {/* </div> */}
         </div>
       </>
     )
