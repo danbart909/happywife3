@@ -6,9 +6,8 @@ import Home from './components/Home'
 import Areas from './components/Areas'
 import Services from './components/Services'
 import Pricing from './components/Pricing'
-import BookNow from './components/BookNow'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
-import FooterTabs from './components/FooterTabs'
 import ScrollToTop from './modules/ScrollToTop'
 import Acworth from './pages/areas/Acworth'
 import Austell from './pages/areas/Austell'
@@ -20,38 +19,41 @@ import Roswell from './pages/areas/Roswell'
 import Smyrna from './pages/areas/Smyrna'
 import Vinings from './pages/areas/Vinings'
 import Woodstock from './pages/areas/Woodstock'
-import ResidentialJunkRemoval from './pages/services/ResidentialJunkRemoval'
-import ApplianceRemoval from './pages/services/ApplianceRemoval'
-import AtticJunkRemoval from './pages/services/AtticJunkRemoval'
-import BasementCleanOut from './pages/services/BasementCleanOut'
-import BulkTrashPickUp from './pages/services/BulkTrashPickUp'
-import FreezerRemoval from './pages/services/FreezerRemoval'
-import GarageCleanOut from './pages/services/GarageCleanOut'
-import GrillRemoval from './pages/services/GrillRemoval'
-import HouseholdJunkRemoval from './pages/services/HouseholdJunkRemoval'
-import MattressRemoval from './pages/services/MattressRemoval'
-import MovingJunk from './pages/services/MovingJunk'
-import OvenRemoval from './pages/services/OvenRemoval'
-import RefrigeratorRemoval from './pages/services/RefrigeratorRemoval'
-import StoveRemoval from './pages/services/StoveRemoval'
-import WasherAndDryerRemoval from './pages/services/WasherAndDryerRemoval'
-import YardDebrisRemoval from './pages/services/YardDebrisRemoval'
-import CommercialJunkRemoval from './pages/services/CommercialJunkRemoval'
-import ApartmentCleanOut from './pages/services/ApartmentCleanOut'
-import CarpetRemoval from './pages/services/CarpetRemoval'
-import ForeclosureJunkRemoval from './pages/services/ForeclosureJunkRemoval'
-import OfficeJunkRemoval from './pages/services/OfficeJunkRemoval'
-import StorageUnitCleanOut from './pages/services/StorageUnitCleanOut'
-import WarehouseCleanOut from './pages/services/WarehouseCleanOut'
-import FurnitureJunkRemoval from './pages/services/FurnitureJunkRemoval'
-import CouchRemoval from './pages/services/CouchRemoval'
-import DresserRemoval from './pages/services/DresserRemoval'
-import EWasteRemoval from './pages/services/EWasteRemoval'
-import EntertainmentCenterRemoval from './pages/services/EntertainmentCenterRemoval'
-import LoveSeatRemoval from './pages/services/LoveSeatRemoval'
-import ReclinerRemoval from './pages/services/ReclinerRemoval'
-import TableAndChairsRemoval from './pages/services/TableAndChairsRemoval'
-import TVRemoval from './pages/services/TVRemoval'
+// import ResidentialJunkRemoval from './pages/services/ResidentialJunkRemoval'
+// import ApplianceRemoval from './pages/services/ApplianceRemoval'
+// import AtticJunkRemoval from './pages/services/AtticJunkRemoval'
+// import BasementCleanOut from './pages/services/BasementCleanOut'
+// import BulkTrashPickUp from './pages/services/BulkTrashPickUp'
+// import FreezerRemoval from './pages/services/FreezerRemoval'
+// import GarageCleanOut from './pages/services/GarageCleanOut'
+// import GrillRemoval from './pages/services/GrillRemoval'
+// import HouseholdJunkRemoval from './pages/services/HouseholdJunkRemoval'
+// import MattressRemoval from './pages/services/MattressRemoval'
+// import MovingJunk from './pages/services/MovingJunk'
+// import OvenRemoval from './pages/services/OvenRemoval'
+// import RefrigeratorRemoval from './pages/services/RefrigeratorRemoval'
+// import StoveRemoval from './pages/services/StoveRemoval'
+// import WasherAndDryerRemoval from './pages/services/WasherAndDryerRemoval'
+// import YardDebrisRemoval from './pages/services/YardDebrisRemoval'
+// import CommercialJunkRemoval from './pages/services/CommercialJunkRemoval'
+// import ApartmentCleanOut from './pages/services/ApartmentCleanOut'
+// import CarpetRemoval from './pages/services/CarpetRemoval'
+// import ForeclosureJunkRemoval from './pages/services/ForeclosureJunkRemoval'
+// import OfficeJunkRemoval from './pages/services/OfficeJunkRemoval'
+// import StorageUnitCleanOut from './pages/services/StorageUnitCleanOut'
+// import WarehouseCleanOut from './pages/services/WarehouseCleanOut'
+// import FurnitureJunkRemoval from './pages/services/FurnitureJunkRemoval'
+// import CouchRemoval from './pages/services/CouchRemoval'
+// import DresserRemoval from './pages/services/DresserRemoval'
+// import EWasteRemoval from './pages/services/EWasteRemoval'
+// import EntertainmentCenterRemoval from './pages/services/EntertainmentCenterRemoval'
+// import LoveSeatRemoval from './pages/services/LoveSeatRemoval'
+// import ReclinerRemoval from './pages/services/ReclinerRemoval'
+// import TableAndChairsRemoval from './pages/services/TableAndChairsRemoval'
+// import TVRemoval from './pages/services/TVRemoval'
+import TermsOfService from './pages/footer/TermsOfService'
+import PrivacyPolicy from './pages/footer/PrivacyPolicy'
+import Sitemap from './pages/footer/Sitemap'
 import $ from 'jquery'
 
 export default class App extends Component {
@@ -78,7 +80,7 @@ export default class App extends Component {
             <Route path='/areas/Smyrna' component={Smyrna} />
             <Route path='/areas/Vinings' component={Vinings} />
             <Route path='/areas/Woodstock' component={Woodstock} />
-            <Route path='/services/ResidentialJunkRemoval' component={ResidentialJunkRemoval} />
+            {/* <Route path='/services/ResidentialJunkRemoval' component={ResidentialJunkRemoval} />
             <Route path='/services/ApplianceRemoval' component={ApplianceRemoval} />
             <Route path='/services/AtticJunkRemoval' component={AtticJunkRemoval} />
             <Route path='/services/BasementCleanOut' component={BasementCleanOut} />
@@ -109,11 +111,14 @@ export default class App extends Component {
             <Route path='/services/LoveSeatRemoval' component={LoveSeatRemoval} />
             <Route path='/services/ReclinerRemoval' component={ReclinerRemoval} />
             <Route path='/services/TableAndChairsRemoval' component={TableAndChairsRemoval} />
-            <Route path='/services/TVRemoval' component={TVRemoval} />
+            <Route path='/services/TVRemoval' component={TVRemoval} /> */}
             <Route path='/areas' component={Areas} />
             <Route path='/services' component={Services} />
             <Route path='/pricing' component={Pricing} />
-            <Route path='/booknow' component={BookNow} />
+            <Route path='/contact' component={Contact} />
+            <Route path='/termsofservice' component={TermsOfService} />
+            <Route path='/privacypolicy' component={PrivacyPolicy} />
+            <Route path='/sitemap' component={Sitemap} />
           </Switch>
         </div>
         <Footer />

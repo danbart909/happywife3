@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import trailer1 from '../images/trailer1.jpg'
-import trailer2 from '../images/trailer2.jpg'
-import trailer3 from '../images/trailer3.jpg'
 import logo from '../images/logo.png'
-import AboutUs from './AboutUs'
-import MidBanner from './MidBanner'
+// import AboutUs from './AboutUs'
+// import MidBanner from './MidBanner'
 import Virtues from './Virtues'
+import ServicesStub from './ServicesStub'
+import AreasStub from './AreasStub'
+import PricingStub from './PricingStub'
+import ContactStub from './ContactStub'
 
 export default class Home extends Component {
   // constructor(props) {
@@ -30,23 +31,6 @@ export default class Home extends Component {
 
   render() {
 
-    // $(document).ready(function () {
-    
-    //   $('#home-third-button-1').hover(function() {
-    //     $('#home-fourth-img').css('background-image', 'url(https://i.imgur.com/SRaiiE6.jpg)')
-    //   })
-
-    //   $('#home-third-button-2').hover(function() {
-    //     $('#home-fourth-img').css('background-image', 'url(https://i.imgur.com/jvtvG2G.jpg)')
-    //   })
-
-    // })
-
-    
-    // let imgStyle = {
-    //   backgroundImage: `url(${this.state.trailerimg})`
-    // }
-
     return (
       <div className='home-container'>
         <div className='home-top'>
@@ -58,6 +42,7 @@ export default class Home extends Component {
                 alt='company logo'
               />
             </div>
+            
             {/* <div className='home-img-container-2'>
               <img
                 src='https://i.imgur.com/usX1Piu.png'
@@ -65,42 +50,37 @@ export default class Home extends Component {
                 alt='company logo'
               />
             </div> */}
-          </div>
-          <div className='home-second'>
-            <div className='home-second-span'>
+            <div className='home-first-2'>
               <span>A Customer Service-Driven Junk Removal Company</span>
             </div>
+            <Link to='/contact' className='home-first-3'>
+              <span>Contact Us to Get a Quote</span>
+            </Link>
           </div>
         </div>
         <div className='home-mid'>
-          <div className='home-third'>
+          <div className='home-2'>
             <Link
               to='/services'
-              className='home-third-button-1'
-              // onMouseEnter={() => this.setTrailer2()}
-              // onMouseLeave={() => this.setTrailer1()}
+              className='home-2-button-1 home-2-button'
             >
               <span>WHAT WE TAKE</span>
             </Link>
             <Link
               to='/areas'
-              className='home-third-button-2'
-              // onMouseEnter={() => this.setTrailer2()}
-              // onMouseLeave={() => this.setTrailer1()}
+              className='home-2-button-2 home-2-button'
             >
               <span>OUR AREAS</span>
             </Link>
             <Link
               to='/pricing'
-              className='home-third-button-3'
-              // onMouseEnter={() => this.setTrailer2()}
-              // onMouseLeave={() => this.setTrailer1()}
+              className='home-2-button-3 home-2-button'
             >
               <span>SEE PRICING</span>
             </Link>
             <Link
-              to='/booknow'
-              className='home-third-button-4'
+              to='/contact'
+              className='home-2-button-4 home-2-button'
               // onMouseEnter={() => this.setTrailer3()}
               // onMouseLeave={() => this.setTrailer1()}
             >
@@ -114,7 +94,10 @@ export default class Home extends Component {
           </div> */}
         </div>
         <div className='home-bot'>
-          <AboutUs />
+          <ServicesStub />
+          <AreasStub />
+          <PricingStub />
+          <ContactStub />
           <Virtues />
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet';
 
 export default class Acworth extends Component {
   render() {
@@ -10,16 +10,19 @@ export default class Acworth extends Component {
           <title>Happy Wife - Acworth</title>
           <meta name="description" content="Happy Wife - Acworth" />
         </Helmet>
-        <div className=''>
-          <div className=''>
-            <div className=''>
+        <div className='sa-container acworth-container'>
+          <div className='sa-content acworth-content'>
+            <div className='sa-header acworth-header'>
               <span>Acworth</span>
             </div>
-            <div className=''>
-              <span>Our Acworth Junk Removal team believes that you deserve to know that everyone who comes into your house should be upright, honest men and women. That’s why we honor your home and your family. We will never track dirt into you house or use profanity around you or your children. Your comfort and ease of mind is our utmost concern. We never provide a service that we wouldn’t be proud of! Whether you need furniture removal, appliance removal, property clean out, or and other form of household junk, Happy Wife junk service is there for you. Our fast, reliable service is a favorite for those looking for Acworth junk hauling.</span>
+            <div className='sa-text acworth-text'>
+              <span>Happy Wife Junk Service is your expert provider of local junk removal services in Acworth, GA. We provide high-quality services to homes and businesses in the area. We make every effort to donate, recycle, or re-purpose our clients' unwanted items so that they do not end up in a landfill. Contact us at 770-873-0803 or complete the <Link to='/contact' className='sa-link'><span>contact form</span></Link> to schedule your free junk removal estimate today!</span>
             </div>
-            <div className=''>
-              <Link to='/areas' className='areas-goback'><i className="arrow fas fa-arrow-left"></i><span>Back to List</span></Link>
+            <div className='sa-footer'>
+              <div className='sa-goback' onClick={() => {this.props.history.goBack()}}>
+                <i className="fas fa-arrow-left sa-goback-leftarrow"/>
+                <span className='sa-goback-span'>Back</span>
+              </div>
             </div>
           </div>
         </div>

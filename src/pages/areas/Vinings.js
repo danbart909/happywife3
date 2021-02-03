@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom'
 
 export default class Vinings extends Component {
   render() {
@@ -10,16 +9,19 @@ export default class Vinings extends Component {
           <title>Happy Wife - Vinings</title>
           <meta name="description" content="Happy Wife - Vinings" />
         </Helmet>
-        <div className='gD areas Vinings UL'>
-          <div className='gD-box'>
-            <div className='gD-title'>
+        <div className='sa-container vinings-container'>
+          <div className='sa-content vinings-content'>
+            <div className='sa-header vinings-header'>
               <span>Vinings</span>
             </div>
-            <div className='gD-body'>
-              <span>Our Vinings Junk Removal team believes that you deserve to know that everyone who comes into your house should be upright, honest men and women. That’s why we honor your home and your family. We will never track dirt into you house or use profanity around you or your children. Your comfort and ease of mind is our utmost concern. We never provide a service that we wouldn’t be proud of! Whether you need furniture removal, appliance removal, property clean out, or and other form of household junk, Happy Wife junk service is there for you. Our fast, reliable service is a favorite for those looking for Vinings junk hauling.</span>
+            <div className='sa-text vinings-text'>
+              <span>Whatever you need removed from you Vinings Georgia location, Happy Wife Junk Service can do the job. We can handle any job, whether big or small. From a single piece of furniture to whole a whole giant load, we can do it. Happy Wife Junk Service also donates and recycles anything we can. Call Happy Wife Junk Service today to schedule.</span>
             </div>
-            <div className='gD-go-back'>
-              <Link to='/areas' className='areas-goback'><i className="arrow fas fa-arrow-left"></i><span>Back to List</span></Link>
+            <div className='sa-footer'>
+              <div className='sa-goback' onClick={() => {this.props.history.goBack()}}>
+                <i className="fas fa-arrow-left sa-goback-leftarrow"/>
+                <span className='sa-goback-span'>Back</span>
+              </div>
             </div>
           </div>
         </div>

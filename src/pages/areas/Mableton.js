@@ -1,25 +1,27 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom'
 
 export default class Mableton extends Component {
   render() {
     return (
       <>
         <Helmet>
-          <title>Happy Wife - Kennesaw</title>
-          <meta name="description" content="Happy Wife - Kennesaw" />
+          <title>Happy Wife - Mableton</title>
+          <meta name="description" content="Happy Wife - Mableton" />
         </Helmet>
-        <div className='gD areas Mableton UL'>
-          <div className='gD-box'>
-            <div className='gD-title'>
+        <div className='sa-container mableton-container'>
+          <div className='sa-content mableton-content'>
+            <div className='sa-header mableton-header'>
               <span>Mableton</span>
             </div>
-            <div className='gD-body'>
-              <span>Our Mableton Junk Removal team believes that you deserve to know that everyone who comes into your house should be upright, honest men and women. That’s why we honor your home and your family. We will never track dirt into you house or use profanity around you or your children. Your comfort and ease of mind is our utmost concern. We never provide a service that we wouldn’t be proud of! Whether you need furniture removal, appliance removal, property clean out, or and other form of household junk, Happy Wife junk service is there for you. Our fast, reliable service is a favorite for those looking for Mableton junk hauling.</span>
+            <div className='sa-text mableton-text'>
+              <span>We can you help you get rid of your old junk. We offer reliable Mableton junk removal and disposal services that help you remove the stress while saving time and money! Our professional junk haulers will remove and dispose of your unwanted bulky junk items by responsibly recycling or donating the items for you. When you need help decluttering used junk or have that broken appliance hauled away, Happy Wife offers guaranteed, upfront pricing for on-demand junk removal Mableton, Georgia. Save time and money when you book full service Mableton junk removal and professional haul away services.</span>
             </div>
-            <div className='gD-go-back'>
-              <Link to='/areas' className='areas-goback'><i className="arrow fas fa-arrow-left"></i><span>Back to List</span></Link>
+            <div className='sa-footer'>
+              <div className='sa-goback' onClick={() => {this.props.history.goBack()}}>
+                <i className="fas fa-arrow-left sa-goback-leftarrow"/>
+                <span className='sa-goback-span'>Back</span>
+              </div>
             </div>
           </div>
         </div>

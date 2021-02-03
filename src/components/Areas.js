@@ -11,13 +11,13 @@ import Roswell from '../images/areas/Roswell.jpg'
 import Smyrna from '../images/areas/Smyrna.jpg'
 import Vinings from '../images/areas/Vinings.jpg'
 import Woodstock from '../images/areas/Woodstock.jpg'
-import placeholder from '../images/placeholder.jpg'
+import logo from '../images/logo.png'
 
 export default class Areas extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      img: placeholder
+      img: logo
     }
   }
 
@@ -62,7 +62,7 @@ export default class Areas extends Component {
   }
 
   placeholder = () => {
-    this.setState({ img: placeholder })
+    this.setState({ img: logo })
   }
 
   render() {
@@ -74,13 +74,12 @@ export default class Areas extends Component {
           <meta name="description" content="Happy Wife - Service Areas" />
         </Helmet>
         <div className='a-container container'>
-          {/* <div className='a'> */}
 
             <div className='a-title title'>
               <span>Our Service Areas</span>
             </div>
 
-            <div className='a-body body'>
+            <div className='a-body'>
 
               <div className='a-list'>
 
@@ -97,7 +96,6 @@ export default class Areas extends Component {
                   className='austell map'
                   to='/areas/Austell'
                   onMouseEnter={() => this.austell()}
-                  // onMouseLeave={() => this.placeholder()}
                 >
                   <span>Austell</span>
                 </Link>
@@ -106,7 +104,6 @@ export default class Areas extends Component {
                   className='kennesaw map'
                   to='/areas/Kennesaw'
                   onMouseEnter={() => this.kennesaw()}
-                  // onMouseLeave={() => this.placeholder()}
                 >
                   <span>Kennesaw</span>
                 </Link>
@@ -115,7 +112,6 @@ export default class Areas extends Component {
                   className='marietta map'
                   to='/areas/Marietta'
                   onMouseEnter={() => this.marietta()}
-                  // onMouseLeave={() => this.placeholder()}
                 >
                 <span>Marietta</span>
                 </Link>
@@ -124,7 +120,6 @@ export default class Areas extends Component {
                   className='mableton map'
                   to='/areas/Mableton'
                   onMouseEnter={() => this.mableton()}
-                  // onMouseLeave={() => this.placeholder()}
                 >
                   <span>Mableton</span>
                 </Link>
@@ -133,7 +128,6 @@ export default class Areas extends Component {
                   className='powdersprings map'
                   to='/areas/PowderSprings'
                   onMouseEnter={() => this.powderSprings()}
-                  // onMouseLeave={() => this.placeholder()}
                 >
                   <span>Powder Springs</span>
                 </Link>
@@ -142,7 +136,6 @@ export default class Areas extends Component {
                   className='roswell map'
                   to='/areas/Roswell'
                   onMouseEnter={() => this.roswell()}
-                  // onMouseLeave={() => this.placeholder()}
                 >
                   <span>Roswell</span>
                 </Link>
@@ -151,7 +144,6 @@ export default class Areas extends Component {
                   className='smyrna map'
                   to='/areas/Smyrna'
                   onMouseEnter={() => this.smyrna()}
-                  // onMouseLeave={() => this.placeholder()}
                 >
                   <span>Smyrna</span>
                 </Link>
@@ -160,7 +152,6 @@ export default class Areas extends Component {
                   className='vinings map'
                   to='/areas/Vinings'
                   onMouseEnter={() => this.vinings()}
-                  // onMouseLeave={() => this.placeholder()}
                 >
                   <span>Vinings</span>
                 </Link>
@@ -169,7 +160,6 @@ export default class Areas extends Component {
                   className='woodstock map'
                   to='/areas/Woodstock'
                   onMouseEnter={() => this.woodstock()}
-                  // onMouseLeave={() => this.placeholder()}
                 >
                   <span>Woodstock</span>
                 </Link>
@@ -182,7 +172,6 @@ export default class Areas extends Component {
 
             </div>
 
-          {/* </div> */}
         </div>
       </>
     )

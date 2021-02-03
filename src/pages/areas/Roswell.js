@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom'
 
 export default class Roswell extends Component {
   render() {
@@ -10,16 +9,19 @@ export default class Roswell extends Component {
           <title>Happy Wife - Roswell</title>
           <meta name="description" content="Happy Wife - Roswell" />
         </Helmet>
-        <div className='gD areas Roswell UL'>
-          <div className='gD-box'>
-            <div className='gD-title'>
+        <div className='sa-container roswell-container'>
+          <div className='sa-content roswell-content'>
+            <div className='sa-header roswell-header'>
               <span>Roswell</span>
             </div>
-            <div className='gD-body'>
-              <span>Our Roswell Junk Removal team believes that you deserve to know that everyone who comes into your house should be upright, honest men and women. That’s why we honor your home and your family. We will never track dirt into you house or use profanity around you or your children. Your comfort and ease of mind is our utmost concern. We never provide a service that we wouldn’t be proud of! Whether you need furniture removal, appliance removal, property clean out, or and other form of household junk, Happy Wife junk service is there for you. Our fast, reliable service is a favorite for those looking for Roswell junk hauling.</span>
+            <div className='sa-text roswell-text'>
+              <span>We offer great removal and hauling rates to the people of Roswell Georgia. We have low prices and timely, professional service. Whether you're a business in Roswell, a non-profit, a home owner, or a renter, we can help you with your Roswell junk removal needs. We do small one-time loads as well as regular recurring service. If your closets are overflowing with junk, your store has regular hauling needs, or you've just completed landscaping and have a ton of yard waste that needs to be trashed, we can help.</span>
             </div>
-            <div className='gD-go-back'>
-              <Link to='/areas' className='areas-goback'><i className="arrow fas fa-arrow-left"></i><span>Back to List</span></Link>
+            <div className='sa-footer'>
+              <div className='sa-goback' onClick={() => {this.props.history.goBack()}}>
+                <i className="fas fa-arrow-left sa-goback-leftarrow"/>
+                <span className='sa-goback-span'>Back</span>
+              </div>
             </div>
           </div>
         </div>
